@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #6990f2;
+}
+
+.wrapper {
+  width: 430px;
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.wrapper header {
+  color: #6990f2;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wrapper form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 167px;
+  border: 2px dashed #6990f2;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+form :where(i, p) {
+  color: #6990f2;
+}
+
+form i {
+  font-size: 50px;
+}
+form p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+section li.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #e9f0ff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+section li.row i {
+  font-size: 28px;
+  color: #6990f2;
+}
+
+section .details span {
+  font-size: 14px;
+}
+
+.progress-area li.row .contents {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.progress-area .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-area .progress-bar {
+  height: 6px;
+  width: 100%;
+  border-radius: 30px;
+  background: #fff;
+  margin: 4px 0;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  width: 0%;
+  background: #6990f2;
+  border-radius: inherit;
+}
+
+.uploaded-area {
+  max-height: 230px;
+  overflow-y: auto;
+}
+.uploaded-area.onprogress {
+  min-height: 150px;
+}
+
+.uploaded-area::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+.uploaded-area::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.uploaded-area::-webkit-scrollbar-thumb {
+  background: #6990f2; 
+}
+
+.uploaded-area .row .contents {
+  display: flex;
+  align-items: center;
+}
+
+.uploaded-area .row .details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.uploaded-area .details .sizes {
+  color: #404040;
+  font-size: 12px;
+  font-weight: 300;
+}
+
